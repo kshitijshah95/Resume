@@ -1,0 +1,314 @@
+/* ----------------------------------- */
+/* General Styles */
+/* ----------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+body>header, body>footer{
+    text-align: center;
+}
+
+
+/* ----------------------------------- */
+/* Headings and Text */
+/* ----------------------------------- */
+a{
+    color:#222222;
+    text-decoration: none;
+}
+
+h1, h2, h3{  
+    line-height: 1.7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+    width: fit-content;
+    position: relative;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+h2::after {
+    content:'';
+    position: absolute;
+    background-color: #222222;
+    width: 40%;
+    height: 2px;
+    bottom: -10px;
+    left: 30%;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p{
+    margin: 10px;
+    line-height: 1.5em;
+}
+strong{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* ----------------------------------- */
+/* Form Styling */
+/* ----------------------------------- */
+input, textarea{
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    width: 70%;
+    margin: 10px;
+    transition: border 0.2s;
+}
+textarea{
+    height: 200px;
+}
+
+input:hover, textarea:hover{
+    border: 2px solid #222222;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #222222;
+}
+
+
+/* ----------------------------------- */
+/* Custom btn Links */
+/* ----------------------------------- */
+.btn{
+    display: inline-block;
+    color: #222222;
+    padding:10px 15px;
+    margin: 10px 5px;
+    border:  2px  solid  #222222;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: font-weight 0.2s;
+}
+
+.btn:hover{
+    font-weight: bolder;
+}
+
+
+/* ----------------------------------- */
+/* Content */
+/* ----------------------------------- */
+.content-wrap{
+    max-width:800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.content-wrap > header{
+    padding: 20px;
+}
+
+.content-list{
+    padding:20px;
+}
+
+.content-list>li{
+    padding: 50px 20px;
+}
+
+.content-list>li:first-of-type {
+    padding-top: 20px;
+}
+
+.content-list>li:last-of-type {
+    padding-bottom: 20px;
+}
+
+
+/* ----------------------------------- */
+/* FOntAwesome Icons */
+/* ----------------------------------- */
+.fab, .fas{
+    font-size: 1.3em;
+    margin: 10px;
+    color:#222222;
+    transition: color 0.2s;
+}
+.fab:hover, .fas:hover{
+    color:#111111;
+    
+}
+
+
+/* ----------------------------------- */
+/* Technologies Used */
+/* ----------------------------------- */
+.tech-used{
+    padding:20px;
+}
+
+.tech-used > h4{
+    font-weight: bold;
+}
+
+.tech-used > ul{
+    padding: 10px;
+}
+.tech-used li{
+    display: inline-block;
+    padding: 0 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+    border:  1px solid #222;
+}
+
+
+/* ----------------------------------- */
+/* HEADER */
+/* ----------------------------------- */
+body > header{
+    padding: 200px 0;
+}
+
+
+
+/* ----------------------------------- */
+/* NAVIGATION */
+/* ----------------------------------- */
+nav{
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index:100;
+}
+
+
+.nav-brand{
+    padding: auto 50px;
+}
+
+.nav-menu{
+    display: block;
+    padding: 7px;
+}
+
+.nav-menu a{ 
+    padding: 7px 10px;
+}
+
+.nav-menu a:hover{ 
+    font-weight: bolder;
+}
+.bar-icon{
+    display: none;
+}   
+
+
+
+/* ----------------------------------- */
+/* SKILLS */
+/* ----------------------------------- */
+
+
+/* ----------------------------------- */
+/* EDUCATION */
+/* ----------------------------------- */
+
+
+/* ----------------------------------- */
+/* WORK EXPERIENCE */
+/* ----------------------------------- */
+
+
+/* ----------------------------------- */
+/* PROJECTS */
+/* ----------------------------------- */
+
+
+/* ----------------------------------- */
+/* FOOTER */
+/* ----------------------------------- */
+
+.btn-form{
+    padding: 10px 40px;
+    margin: 10px 5px;
+    font-size: 1em;
+    transition: font-weight 0.2s;
+}
+
+.btn-form:hover{
+    font-weight: bold;
+}
+
+.footer-copyright{
+    padding: 15px;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    .nav-content{
+        display: none;
+        grid-template-columns: 1fr;
+        background-color: #eee;
+    }
+
+    .nav-brand h3{ 
+        padding: 15px 10px;
+    }
+
+    .nav-content a{
+        color: #222222;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .bar-icon{
+        text-align: end;
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    } 
+}
+
+@media screen and (min-width: 1025px){
+    .nav-content{
+        overflow: hidden;
+        display: grid !important;
+        grid-template-columns: 2fr 3fr 2fr;
+        padding: 10px;
+    }
+
+    .bar-icon{
+        display: none;
+    }
+}
